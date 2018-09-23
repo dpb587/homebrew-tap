@@ -38,6 +38,7 @@ resources:
   source:
     uri: git@github.com:dpb587/homebrew-tap.git
     private_key: ((tap_private_key))
+    branch: master
 - name: ssoca
   type: metalink-repository
   source:
