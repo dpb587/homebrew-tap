@@ -20,13 +20,7 @@ class Meta4 < Formula
   end
 
   def install
-    if OS.mac?
-      os = "darwin"
-    elsif OS.linux?
-      os = "linux"
-    end
-
-    bin.install "meta4-#{version}-#{os}-amd64" => "meta4"
+    bin.install Pathname.glob("*").first => "meta4"
   end
 end
 EOF

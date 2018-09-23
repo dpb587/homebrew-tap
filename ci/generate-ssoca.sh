@@ -20,13 +20,7 @@ class Ssoca < Formula
   end
 
   def install
-    if OS.mac?
-      os = "darwin"
-    elsif OS.linux?
-      os = "linux"
-    end
-
-    bin.install "ssoca-client-#{version}-#{os}-amd64" => "ssoca"
+    bin.install Pathname.glob("*").first => "ssoca"
   end
 
   test do
