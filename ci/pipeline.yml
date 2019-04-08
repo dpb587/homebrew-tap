@@ -32,6 +32,22 @@ jobs:
     params:
       rebase: true
       repository: tap
+- name: ssoca-dev
+  plan:
+  - get: artifact
+    resource: ssoca-dev
+    trigger: true
+    params:
+      skip_download: true
+  - get: tap
+  - task: update-recipe
+    file: tap/ci/update-recipe-from-metalink.yml
+    params:
+      recipe: ssoca-dev
+  - put: tap
+    params:
+      rebase: true
+      repository: tap
 resources:
 - name: tap
   type: git
@@ -43,6 +59,10 @@ resources:
   type: metalink-repository
   source:
     uri: git+https://github.com/dpb587/ssoca.git//ssoca-final#artifacts
+- name: ssoca-dev
+  type: metalink-repository
+  source:
+    uri: git+https://github.com/dpb587/ssoca.git//ssoca-dev#artifacts
 - name: metalink
   type: metalink-repository
   source:
