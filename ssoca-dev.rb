@@ -1,16 +1,16 @@
 class SsocaDev < Formula
   desc "Client for SSO for services that use CA-based authentication."
   homepage "https://github.com/dpb587/ssoca"
-  version "0.18.2-dev.7"
+  version "0.18.2-dev.8"
 
   depends_on :arch => :x86_64
 
   if OS.mac?
-    url "https://s3-external-1.amazonaws.com/dpb587-ssoca-us-east-1/artifacts/v0.18.2-dev.7/ssoca-client-0.18.2-dev.7-darwin-amd64"
-    sha256 "6fe3771c126541f7d19e8e17bbf022e06a7db46bcc5a42dd4347218584f36597"
+    url "https://s3-external-1.amazonaws.com/dpb587-ssoca-us-east-1/artifacts/v0.18.2-dev.8/ssoca-client-0.18.2-dev.8-darwin-amd64"
+    sha256 "3fc8763c08f0add7d6344ce0361852641b3d43ccd6ef81e84059d376c1360ee4"
   elsif OS.linux?
-    url "https://s3-external-1.amazonaws.com/dpb587-ssoca-us-east-1/artifacts/v0.18.2-dev.7/ssoca-client-0.18.2-dev.7-linux-amd64"
-    sha256 "e2688ac2fa670206c090a2f1ef487700a070bfa5e97b18435cc86f104ba3eb86"
+    url "https://s3-external-1.amazonaws.com/dpb587-ssoca-us-east-1/artifacts/v0.18.2-dev.8/ssoca-client-0.18.2-dev.8-linux-amd64"
+    sha256 "aee0e6549dad2d04d7c6c3489337ad61067aba33450a4f59bcd4840f25acb4dd"
   end
 
   def install
