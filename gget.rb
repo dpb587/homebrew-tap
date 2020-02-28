@@ -6,11 +6,11 @@ class Gget < Formula
   depends_on :arch => :x86_64
 
   if OS.mac?
-    url "https://github.com/dpb587/gget/releases/download/v0.1.0/gget-0.1.0-darwin-amd64"
-    sha256 "18ce2726f7b9183ef90ea2a4074554549a9dab4f1e009231711a03ba8e6d0286"
+    url "https://github.com/dpb587/gget/releases/download/v0.2.0/gget-0.2.0-darwin-amd64"
+    sha256 "2e81fbfb7d28f2a1186ada65ffe3ec4876f796889fc6c14889fb225286b72aa3"
   elsif OS.linux?
-    url "https://github.com/dpb587/gget/releases/download/v0.1.0/gget-0.1.0-linux-amd64"
-    sha256 "418b68caeb302898322465abc31c316a1dbdb7872cdad0fe4a9661c5118860c4"
+    url "https://github.com/dpb587/gget/releases/download/v0.2.0/gget-0.2.0-linux-amd64"
+    sha256 "cb2743613dc5d5e7ec82bfa276da011c365587d5383c3fd5132b863a98267638"
   end
 
   def install
