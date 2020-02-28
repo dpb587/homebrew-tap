@@ -1,7 +1,7 @@
 class Gget < Formula
   desc "A small utility for getting files from git repositories."
   homepage "https://github.com/dpb587/gget"
-  version "0.1.0"
+  version "0.2.0"
 
   depends_on :arch => :x86_64
 
