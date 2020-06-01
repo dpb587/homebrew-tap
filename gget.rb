@@ -1,16 +1,16 @@
 class Gget < Formula
   desc "A small utility for getting files from git repositories."
   homepage "https://github.com/dpb587/gget"
-  version "0.2.0"
+  version "0.3.0"
 
   depends_on :arch => :x86_64
 
   if OS.mac?
-    url "https://github.com/dpb587/gget/releases/download/v0.2.0/gget-0.2.0-darwin-amd64"
-    sha256 "2e81fbfb7d28f2a1186ada65ffe3ec4876f796889fc6c14889fb225286b72aa3"
+    url "https://github.com/dpb587/gget/releases/download/v0.3.0/gget-0.3.0-darwin-amd64"
+    sha256 "2b9d51dceff3483eeae927d01c944643c0185dae0f09b973eb24dfff8cd200a7"
   elsif OS.linux?
-    url "https://github.com/dpb587/gget/releases/download/v0.2.0/gget-0.2.0-linux-amd64"
-    sha256 "cb2743613dc5d5e7ec82bfa276da011c365587d5383c3fd5132b863a98267638"
+    url "https://github.com/dpb587/gget/releases/download/v0.3.0/gget-0.3.0-linux-amd64"
+    sha256 "80c7a1e0bb9c2cc3b10a49ca38ecbf66178d60df562be0c487a25a342b7e83d1"
   end
 
   def install
