@@ -14,7 +14,7 @@ function recipe {
 class ${name} < Formula
   desc "Select entries that match policies based on time and metadata."
   homepage "https://github.com/dpb587/timepolicy"
-  version "${version}"
+  version "${version#v}"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/dpb587/timepolicy/releases/download/${version}/timepolicy-${version}-darwin-amd64.zip"
@@ -43,5 +43,5 @@ end
 EOF
 }
 
-recipe Timepolicy $( sed -e 's/^v//' < "${resources_path}/release/latest/version" ) "${resources_path}/release/latest/sha256sum.txt" \
+recipe Timepolicy $( cat "${resources_path}/release/latest/version" ) "${resources_path}/release/latest/sha256sum.txt" \
   > "${repodir}/Formula/timepolicy.rb"
